@@ -2,10 +2,10 @@ const sqlConn = require('mssql');;
 
 
 const BD_Conn = {
-    user: "usuario",
-    password: "pass",
-    database: "bd",
-    server: "server",
+    user: process.env.USER_BD,
+    password: process.env.PASS_BD,
+    database: process.env.NAME_BD,
+    server: process.env.DOMINIO,
     options: {
         trustedconnerction: false,
         enableArithbort: true,
